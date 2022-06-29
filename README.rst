@@ -1,3 +1,11 @@
+`rure-python <https://github.com/davidblewett/rure-python>`_ hasn't been updated since 2019 with new wheels. This package is identical, except on pypi there is an additional wheel for m1 macbooks.
+
+I built a new wheel for m1 macbooks on my machine and downloaded the existing wheels from `rure-python <https://pypi.org/project/rure/#files>`_. I unpacked the existing wheels, renamed their ``*.dist_info`` to be prefixed with ``kodiak_rure`` instead of ``rure`` and updated ``*.dist_info/METADATA`` with ``kodiak_rure`` instead of ``rure``.
+
+I repacked the wheels with ``wheel pack`` (installed via ``python3 -m pip install wheel``) and uploaded all the wheels to pypi.
+
+----
+
 Python API for RUst's REgex engine
 ==================================
 rure is the Python binding  Rust's regex library, which guarantees linear time

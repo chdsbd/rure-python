@@ -28,7 +28,7 @@ def build_native(spec):
 
 
 setup(
-    name='rure',
+    name='kodiak-rure',
     version='0.2.2',
     author='David Blewett',
     author_email='david@dawninglight.net',
